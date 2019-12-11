@@ -16,7 +16,7 @@ def main():
     message_list = message.split()
 
     for word in message_list:
-
+        word = word.lower()
         if word in file:
             for char in word:
                 print("*", end = "")
