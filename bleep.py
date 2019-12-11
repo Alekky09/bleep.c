@@ -16,13 +16,15 @@ def main():
     message_list = message.split()
 
     for word in message_list:
+        case = word.lower()
 
-        if word in file:
-            word = word.lower()
+
+        if case in file:
             for char in word:
                 print("*", end = "")
         else:
             print(word, end = "")
+
         print(" ", end = "")
     print("")
 
